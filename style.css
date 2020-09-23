@@ -1,0 +1,28 @@
+img {
+  padding: 5px; // paddingen  blir 5 px stor
+  border: 100px;
+  background-color: purple;
+  margin: 50px;
+  height: 404px;
+  width: 404px;
+}
+h1  {
+text-align: center;
+vertical-align: middle;
+margin:100px;
+}
+.lennart {
+  vertical-align: middle;
+}
+
+h2 {
+text-align: center;
+vertical-align: middle;
+margin:100px;
+}
+
+h3 {
+text-align: center;
+vertical-align: middle;
+margin:100px;
+}
