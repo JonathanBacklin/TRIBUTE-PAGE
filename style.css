@@ -1,28 +1,50 @@
 img {
-  padding: 5px; // paddingen  blir 5 px stor
-  border: 100px;
-  background-color: purple;
-  margin: 50px;
+  padding: 5px; /* padding is 5 px */
+  border: 100px; /* border 100px */
+  background-color: purple; /* background color is purple*/
+  margin: 50px; /* margin 50px  */
   height: 404px;
-  width: 404px;
+  width: 404px;  /* height & width 404px  */
 }
-h1  {
-text-align: center;
-vertical-align: middle;
-margin:100px;
+h1  {  /* css for all h1*/
+  font-family: arial;  /* makes the font arial, assuming every site can have arial i dont have backups yet.*/
+text-align: center;    /* makes the text in the middle of the website so it looks better*/
+vertical-align: middle;  /* alights it vertically in the middle.*/
+margin:100px;   /* adds a margin between the pictures and the texts by 100px. Row 14 ends the element with a closing tag. */
 }
-.lennart {
+.lennart {  // css for the lennart pics
+  /* vertical-align: middle;  /* aligns it in the middle */
+}
+
+h2 { /* css for all h2s on the website */
+  text-align: center;
   vertical-align: middle;
+    margin-left: auto;
+  font-family: arial;
+  font-size: 24px;
+}
+p {  /* css for all paragraphs outside of containers */
+  text-align: center;
+  vertical-align: middle;
+  font-family: Arial;
+  font-size: 20px;
+
+}
+* { /* this css is for the entire website which right now is only the background color which is standard white but i put the code here to show that i understand what it does */
+  background-color: white;
 }
 
-h2 {
-text-align: center;
-vertical-align: middle;
-margin:100px;
+div {  /* css for everything inside this div THIS CSS IS NOT DONE YET AND MIGHT BE USELESS */  
+  float: middle ;
+  font-family: arial;
+  position: relative;
+
+
 }
 
-h3 {
-text-align: center;
-vertical-align: middle;
-margin:100px;
+.box-container{  /*
+	display: flex;
+	flex-direction: row;
+
+	justify-content:space-evenly; /* makes the 2 headers in the flex box even, it fills the gaps.
 }
