@@ -1,50 +1,69 @@
+html {
+  background: url(Pictures/24357.jpg) no-repeat center fixed;/* FIXAAAAAAA */
+  background-size: cover;
+}
+
 img {
-  padding: 5px; /* padding is 5 px */
+  padding: 10px; /* padding on the outline purple border is 10 px */
   border: 100px; /* border 100px */
   background-color: purple; /* background color is purple*/
   margin: 50px; /* margin 50px  */
   height: 404px;
   width: 404px;  /* height & width 404px  */
+  border-radius: 50% /* circle around the pictures which frames it */
 }
 h1  {  /* css for all h1*/
   font-family: arial;  /* makes the font arial, assuming every site can have arial i dont have backups yet.*/
 text-align: center;    /* makes the text in the middle of the website so it looks better*/
 vertical-align: middle;  /* alights it vertically in the middle.*/
 margin:100px;   /* adds a margin between the pictures and the texts by 100px. Row 14 ends the element with a closing tag. */
-}
-.lennart {  // css for the lennart pics
-  /* vertical-align: middle;  /* aligns it in the middle */
+text-shadow: 2px 2px black; /* shadow on the the h1 texts */
+color: white;
 }
 
 h2 { /* css for all h2s on the website */
   text-align: center;
+  text-shadow: 2px 2px black;
+  color: white;
   vertical-align: middle;
     margin-left: auto;
   font-family: arial;
   font-size: 24px;
 }
-p {  /* css for all paragraphs outside of containers */
+p {  /* css for all paragraphs */
   text-align: center;
   vertical-align: middle;
   font-family: Arial;
   font-size: 20px;
-
-}
-* { /* this css is for the entire website which right now is only the background color which is standard white but i put the code here to show that i understand what it does */
-  background-color: white;
+  text-shadow: 2px 2px black;
+  color: white;
 }
 
-div {  /* css for everything inside this div THIS CSS IS NOT DONE YET AND MIGHT BE USELESS */  
-  float: middle ;
+#wikilink { /* id css for the link to wiki page of bearded dragons */
+
+
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  vertical-align: middle;
   font-family: arial;
-  position: relative;
-
-
+  font-size: 40px;
+position: relative; /* makes the position relative so i can move it around */
+bottom: 200%;
+left: 34%;
 }
 
-.box-container{  /*
+
+
+.box-container{    /* creates a class for flex box */
 	display: flex;
 	flex-direction: row;
+	justify-content:space-evenly; /* makes the headers in the flex box even, it fills the gaps.*/
+position: relative;
+}
 
-	justify-content:space-evenly; /* makes the 2 headers in the flex box even, it fills the gaps.
+#video {
+  position: relative;
+  top:50%;
+left: 35%;
 }
