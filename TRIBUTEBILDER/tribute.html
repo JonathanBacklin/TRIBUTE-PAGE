@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css" >
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css" > <!--Links my css to this -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Makes the website responsive  -->
 <style>
-.fotogalleri:hover { /*  row 4 links the stylesheet from "style.css" to this html. row 5 makes the site responsive. Row 8 creates a function when u hover any picture */
+.fotogalleri:hover { /*  creates a function when u hover any picture */
   transform: scaleX(-1); /* reverses the pictures because -1 reverses the Axis.*/
 }
 </style>
@@ -12,12 +13,20 @@
 </head>
 <body>
 
-<div class="Bilder" >
+
+<div class="Bilder" > <!-- Div for my 2 pictures of lennart -->
 <img class="Lennart" src="Pictures/98453.jpg" class="lennart" alt= "close up på lennart">
 <img class="Lennart" src="Pictures/9995.jpg" class="lennart" alt= "annan bild på lennart">
 </div>
 
- <h2> My life before Lennart </h2>
+
+<div class=" AnimatedText" > <!-- Div for my animated text -->
+
+  <span class="text1"> Tribute Page </span> <!-- i use span so i can style with the text -->
+  <span class="text2"> to Lennart </span>
+    </div>
+
+ <h2> My life before Lennart </h2> <!-- Just creates a h2 with some text in it -->
    <p> I've always wanted a lizard for a pet,<br>my parents have turtles because my dad is allergic to cats and dogs.<br>
    I have always thought lizards were really cool and interesting,<br> And when i turned 15 i decided to start saving for one. <br>
  Less then a year later i could buy my own baby lizard.  </p>
@@ -28,7 +37,7 @@
    <br> Lennart is a male bearded dragon that heritages from Australia but was born here in sweden. </p>
 
 
-   <div class="box-container">
+   <div class="box-container">    <!-- I create a flex box for my 2 sub headers -->
 
       <div>
         <h1>Where do Beardies come from?</h1>
@@ -49,10 +58,11 @@
     <h2> Here You Can A Vibing Lizard </h2>
 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/PbkdZx8mk98" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
+<!-- i put in the video here  -->
 
 <h1> PHOTO GALLERY </h1>
+
+<!-- A div with child divs for my pictures, i can do css for both. -->
 
 <div class="Photogallery" >
 <div>
@@ -80,12 +90,12 @@
 </div>
 
 
-<footer>
- <a id="wikilink" href="https://en.wikipedia.org/wiki/File:Pogona_vitticeps02.JPG" target="_blank">WIKI FOR BEARDED DRAGONS</a>
+<footer>  <!-- Creates a footer at the bottom of the page -->
+ <a id="wikilink" href="https://en.wikipedia.org/wiki/File:Pogona_vitticeps02.JPG" target="_blank">SEE MORE ABOUT BEARDIES</a>
 </footer>
 
 
 
-
+</body>
 
 </html>
