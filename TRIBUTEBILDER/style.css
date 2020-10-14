@@ -17,7 +17,9 @@ body {  /* creates css for everything inside the body */
 }
 
 
-/* ANIMATED TEXT CSS */
+/*  MENU BAR CSS */
+
+
 
 nav {
 width: 100%;
@@ -55,6 +57,9 @@ font-size: 40px;
 }
 
 
+
+/* ANIMATED TEXT CSS */
+
 .AnimatedText span{ /* css for the container and the span */
   text-transform: uppercase; /* kinda obvious tbh */
   display: block; /* makes it two rows instead of one */
@@ -80,8 +85,9 @@ font-size: 50px;
 font-family: sans-serif;
 font-weight: 600;
 letter-spacing: 8px;
-margin-bottom: 40px;
+margin-bottom: 40px;s
 }
+
 
 @keyframes text {  /* creates keyframes for the animation of where the text should be at
   different times */
@@ -89,16 +95,15 @@ margin-bottom: 40px;
     color: white;
     margin-bottom: -40px;
   }
-  15% { /* 15% into the animation i change the color to pink */
-    color: pink;
+  15% {
+
   }
 50%{ /* 50% into the animation i change the color to yellow and expand the spacing between the letters */
   color: orange;
   letter-spacing: 25px;
   margin-bottom: 10px;
  }
-70% { /* just change the color again. */
-  color: purple;
+70% {
 }
 90% {
   color: white;
@@ -121,7 +126,7 @@ margin-bottom: 40px;
     letter-spacing: 8px; /* changes the spacing to 8px. */
     position: relative; /* makes the position relative so i can make the animation. */
     animation:text 20s 1; /* the animation runs for 20s */
-    animation-delay: 40s; /* takes 20s for the animation to start */
+    animation-delay: 7s; /* takes 20s for the animation to start */
 
 }
 
@@ -179,15 +184,15 @@ h1  {  /* css for all h1*/
 text-align: center;    /* makes the text in the middle of the website so it looks better*/
 vertical-align: middle;  /* alights it vertically in the middle.*/
 margin: 50px;   /* adds a margin between the pictures and the texts by 100px. Row 14 ends the element with a closing tag. */
-text-shadow: 2px 2px black; /* shadow on the the h1 texts */
-color: white;
+color: black;
+font-weight: 1000;
 }
 
 
 h2 { /* css for all h2s on the website */
   text-align: center;
-  text-shadow: 2px 2px black;
-  color: white;
+  color: black;
+  font-weight: 1000;
   vertical-align: middle;
     margin-left: auto;
   font-family: arial;
@@ -199,8 +204,8 @@ p {  /* css for all paragraphs */
   vertical-align: middle;
   font-family: Arial;
   font-size: 25px;
-  text-shadow: 2px 2px black;
-  color: white;
+  font-weight: 800;
+  color: black;
 }
 
 
