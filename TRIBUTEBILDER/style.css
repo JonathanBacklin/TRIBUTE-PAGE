@@ -1,4 +1,4 @@
-/* Skaffa animation(klar), hover, favicon, photo gallery(klar), fix footer color and size.(klar) */
+/* Skaffa animation(klar), hover(klar), favicon(klar), photo gallery(klar), fix footer color and size.(klar) */
 
 html {
   background: url(Pictures/24357.jpg) no-repeat center fixed;/* background is the picture inside the URL, no repeat means that the picture wont repeat itself if its
@@ -6,7 +6,10 @@ html {
   background-size: cover; /* makes the whole site covered by my background pic */
 }
 
-
+head {
+margin: 0;
+padding: 0;
+}
 
 body {  /* creates css for everything inside the body */
   padding: 0;
@@ -16,6 +19,41 @@ body {  /* creates css for everything inside the body */
 
 /* ANIMATED TEXT CSS */
 
+nav {
+width: 100%;
+height: 100px;
+color: white;
+position: fixed;
+top: 0;
+}
+
+
+ul {  /* css for Unorderedlist */
+margin-left: 38%;
+}
+
+ul li {  /* Unorderedlist listitem css */
+list-style: none;  /* removes standard bulletpoints that comes with lists */
+display: inline-block; /* puts them next to eachother */
+line-height: 100px; /* line height to 100px */
+
+}
+
+ul li a { /* Unorderedlist listitem anchor css (the actual text) */
+display: block; /* makes the target area for the options bigger. */
+text-decoration: none; /* removes the standard underline on the texts on the list */
+font-size: 30px;
+font-family: sans-serif;
+font-weight: 500;
+color: white;
+padding: 0 20px; /* padding left and right of the different options set to 20 px */
+}
+
+ul li a:hover { /* when u hover this, everything from the other ul li a will change to this */
+color: Orange;
+font-size: 40px;
+}
+
 
 .AnimatedText span{ /* css for the container and the span */
   text-transform: uppercase; /* kinda obvious tbh */
@@ -23,6 +61,7 @@ body {  /* creates css for everything inside the body */
   text-align: center; /* text goes into the center */
   color: white; /* color on the text goes white */
   text-shadow: 2px 2px black;
+
 }
 
 .text1{
@@ -82,7 +121,7 @@ margin-bottom: 40px;
     letter-spacing: 8px; /* changes the spacing to 8px. */
     position: relative; /* makes the position relative so i can make the animation. */
     animation:text 20s 1; /* the animation runs for 20s */
-    animation-delay: 20s; /* takes 20s for the animation to start */
+    animation-delay: 40s; /* takes 20s for the animation to start */
 
 }
 
