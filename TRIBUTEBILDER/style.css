@@ -8,13 +8,15 @@ html {
 
 
 
-body {  /* creates css for everything inside the body and this is focused for the footer */
+body {  /* creates css for everything inside the body */
   padding: 0;
   margin: 0;
 }
 
 
 /* ANIMATED TEXT CSS */
+
+
 .AnimatedText span{ /* css for the container and the span */
   text-transform: uppercase; /* kinda obvious tbh */
   display: block; /* makes it two rows instead of one */
@@ -30,7 +32,8 @@ body {  /* creates css for everything inside the body and this is focused for th
     letter-spacing: 8px; /* changes the spacing to 8px. */
     margin-bottom: 20px;  /* margin bottom is 20px. */
     position: relative; /* makes the position relative so i can make the animation. */
-    animation:text 5s 1; /* animates the text and it takes 3 seconds to complete the animation */
+    animation:text 5s 1; /* animates the text and it takes 5 seconds to complete the animation */
+    animation-iteration-count: 1; /* the animation runs once.  */
 }
 
 .text2{  /* css for the "for Lennart" text */
@@ -45,14 +48,15 @@ margin-bottom: 40px;
   different times */
   0%{  /* 0% equals at the start of the animation, this is where the whole animation starts */
     color: white;
-    margin-bottom: -10px;
+    margin-bottom: -40px;
   }
   15% { /* 15% into the animation i change the color to pink */
     color: pink;
   }
 50%{ /* 50% into the animation i change the color to yellow and expand the spacing between the letters */
-  color: yellow;
+  color: orange;
   letter-spacing: 25px;
+  margin-bottom: 10px;
  }
 70% { /* just change the color again. */
   color: purple;
@@ -63,6 +67,24 @@ margin-bottom: 40px;
  }
 }
 
+.Creator {
+  text-transform: uppercase; /* kinda obvious tbh */
+  display: block; /* makes it two rows instead of one */
+  text-align: center; /* text goes into the center */
+  color: white; /* color on the text goes white */
+  text-shadow: 2px 2px black;
+}
+
+.Jonte {
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: 600; /* thiccness for the text */
+    letter-spacing: 8px; /* changes the spacing to 8px. */
+    position: relative; /* makes the position relative so i can make the animation. */
+    animation:text 20s 1; /* the animation runs for 20s */
+    animation-delay: 20s; /* takes 20s for the animation to start */
+
+}
 
 
 /* ANIMATED TEXT ENDS AND MY PICTURE CSS BEGINS */
@@ -71,7 +93,7 @@ margin-bottom: 40px;
 
 
 .Bilder {    /* creates css for the both images i put in a div and uses flex box */
-	display: flex;
+  display: flex;
 	flex-direction: row;
 	justify-content:space-evenly; /* makes the headers in the flex box even, it fills the gaps.*/
   /* circle around the pictures which frames it */
@@ -104,10 +126,6 @@ margin-bottom: 100px;
 height: 250px;
 width: 250px;
 border-radius: 20%;
-}
-
-.wide { /* css for gif */
-width: 1800px; /* makes the gif mega wide */
 }
 
 
