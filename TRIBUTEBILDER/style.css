@@ -1,4 +1,4 @@
-/* Skaffa animation(klar), hover(klar), favicon(klar), photo gallery(klar), fix footer color and size.(klar) */
+/* Skaffa animation(klar), hover, favicon, photo gallery(klar), fix footer color and size.(klar) */
 
 html {
   background: url(Pictures/24357.jpg) no-repeat center fixed;/* background is the picture inside the URL, no repeat means that the picture wont repeat itself if its
@@ -6,138 +6,15 @@ html {
   background-size: cover; /* makes the whole site covered by my background pic */
 }
 
-head {
-margin: 0;
-padding: 0;
-}
-
-body {  /* creates css for everything inside the body */
+body {  /* creates css for everything inside the body and this is focused for the footer */
   padding: 0;
   margin: 0;
 }
 
 
-/*  MENU BAR CSS */
-
-
-
-nav {
-width: 100%;
-height: 100px;
-color: white;
-position: fixed;
-top: 0;
-}
-
-
-ul {  /* css for Unorderedlist */
-margin-left: 38%;
-}
-
-ul li {  /* Unorderedlist listitem css */
-list-style: none;  /* removes standard bulletpoints that comes with lists */
-display: inline-block; /* puts them next to eachother */
-line-height: 100px; /* line height to 100px */
-
-}
-
-ul li a { /* Unorderedlist listitem anchor css (the actual text) */
-display: block; /* makes the target area for the options bigger. */
-text-decoration: none; /* removes the standard underline on the texts on the list */
-font-size: 30px;
-font-family: sans-serif;
-font-weight: 500;
-color: white;
-padding: 0 20px; /* padding left and right of the different options set to 20 px */
-}
-
-ul li a:hover { /* when u hover this, everything from the other ul li a will change to this */
-color: Orange;
-font-size: 40px;
-}
-
-
-
-/* ANIMATED TEXT CSS */
-
-.AnimatedText span{ /* css for the container and the span */
-  text-transform: uppercase; /* kinda obvious tbh */
-  display: block; /* makes it two rows instead of one */
-  text-align: center; /* text goes into the center */
-  color: white; /* color on the text goes white */
-  text-shadow: 2px 2px black;
-
-}
-
-.text1{
-  font-size: 70px;
-  font-family: sans-serif;
-  font-weight: 600; /* thiccness for the text */
-    letter-spacing: 8px; /* changes the spacing to 8px. */
-    margin-bottom: 20px;  /* margin bottom is 20px. */
-    position: relative; /* makes the position relative so i can make the animation. */
-    animation:text 5s 1; /* animates the text and it takes 5 seconds to complete the animation */
-    animation-iteration-count: 1; /* the animation runs once.  */
-}
-
-.text2{  /* css for the "for Lennart" text */
-font-size: 50px;
-font-family: sans-serif;
-font-weight: 600;
-letter-spacing: 8px;
-margin-bottom: 40px;s
-}
-
-
-@keyframes text {  /* creates keyframes for the animation of where the text should be at
-  different times */
-  0%{  /* 0% equals at the start of the animation, this is where the whole animation starts */
-    color: white;
-    margin-bottom: -40px;
-  }
-  15% {
-
-  }
-50%{ /* 50% into the animation i change the color to yellow and expand the spacing between the letters */
-  color: orange;
-  letter-spacing: 25px;
-  margin-bottom: 10px;
- }
-70% {
-}
-90% {
-  color: white;
-  letter-spacing: 8px; /* now i change the spacing back so it looks kinda smooth. */
- }
-}
-
-.Creator {
-  text-transform: uppercase; /* kinda obvious tbh */
-  display: block; /* makes it two rows instead of one */
-  text-align: center; /* text goes into the center */
-  color: white; /* color on the text goes white */
-  text-shadow: 2px 2px black;
-}
-
-.Jonte {
-  font-size: 70px;
-  font-family: sans-serif;
-  font-weight: 600; /* thiccness for the text */
-    letter-spacing: 8px; /* changes the spacing to 8px. */
-    position: relative; /* makes the position relative so i can make the animation. */
-    animation:text 20s 1; /* the animation runs for 20s */
-    animation-delay: 7s; /* takes 20s for the animation to start */
-
-}
-
-
-/* ANIMATED TEXT ENDS AND MY PICTURE CSS BEGINS */
-
-
-
 
 .Bilder {    /* creates css for the both images i put in a div and uses flex box */
-  display: flex;
+	display: flex;
 	flex-direction: row;
 	justify-content:space-evenly; /* makes the headers in the flex box even, it fills the gaps.*/
   /* circle around the pictures which frames it */
@@ -157,7 +34,68 @@ img {
 
 }
 
-.Photogallery {  /* css for the overall gallery but not the actual pictures */
+
+h1  {  /* css for all h1*/
+  font-family: arial;  /* makes the font arial, assuming every site can have arial i dont have backups yet.*/
+  font-size: 36px;
+text-align: center;    /* makes the text in the middle of the website so it looks better*/
+vertical-align: middle;  /* alights it vertically in the middle.*/
+margin: 50px;   /* adds a margin between the pictures and the texts by 100px. Row 14 ends the element with a closing tag. */
+text-shadow: 2px 2px black; /* shadow on the the h1 texts */
+color: white;
+}
+
+
+h2 { /* css for all h2s on the website */
+  text-align: center;
+  text-shadow: 2px 2px black;
+  color: white;
+  vertical-align: middle;
+    margin-left: auto;
+  font-family: arial;
+  font-size: 36px;
+}
+
+p {  /* css for all paragraphs */
+  text-align: center;
+  vertical-align: middle;
+  font-family: Arial;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+  color: white;
+}
+
+#wikilink { /* # is id css for the link to wiki page of bearded dragons */
+
+
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  vertical-align: middle;
+  font-family: arial;
+  font-size: 40px;
+position: relative; /* makes the position relative so i can move it around */
+left: 1,5%;
+}
+
+
+
+.box-container{    /* creates a class for flex box for the 2 headers */
+  border-radius: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly; /* makes the headers in the flex box even, it fills the gaps.*/
+  outline: outset; /* this makes the outline of the div dotted. */
+
+}
+
+#video {
+  position: relative;
+left: 35%;
+margin-bottom: 100px;
+}
+
+.Photogallery {
   display: flex;
   justify-content:space-evenly;
 flex-flow: wrap;
@@ -172,77 +110,14 @@ width: 250px;
 border-radius: 20%;
 }
 
+.wide {
 
-/* CSS FOR PICTURES ENDS AND HEADERS AND PARAGRAPHS BEGINS */
-
-
-
-
-h1  {  /* css for all h1*/
-  font-family: arial;  /* makes the font arial, assuming every site can have arial i dont have backups yet.*/
-  font-size: 36px;
-text-align: center;    /* makes the text in the middle of the website so it looks better*/
-vertical-align: middle;  /* alights it vertically in the middle.*/
-margin: 50px;   /* adds a margin between the pictures and the texts by 100px. Row 14 ends the element with a closing tag. */
-color: black;
-font-weight: 1000;
-}
-
-
-h2 { /* css for all h2s on the website */
-  text-align: center;
-  color: black;
-  font-weight: 1000;
-  vertical-align: middle;
-    margin-left: auto;
-  font-family: arial;
-  font-size: 36px;
-}
-
-p {  /* css for all paragraphs */
-  text-align: center;
-  vertical-align: middle;
-  font-family: Arial;
-  font-size: 25px;
-  font-weight: 800;
-  color: black;
-}
-
-
-
-/* NOW CSS FOR IDS LEFTOVER DIVS AND REST */
-
-#wikilink { /* # is id css for the link to wiki page of bearded dragons */
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px black;
-  vertical-align: middle;
-  font-family: arial;
-  font-size: 40px;
+width: 1800px;
 
 }
-
-
-
-.box-container{    /* creates a class for flex box for the 2 headers about lizards */
-  border-radius: 100px;
-	display: flex;  /* displays the headers as flex*/
-	flex-direction: row; /* puts them in a row next to eachother */
-	justify-content:space-evenly; /* makes the headers in the flex box even, it fills the gaps.*/
-  outline: outset; /* this makes the outline of the div dotted. */
-
-}
-
-#video { /* css for my youtube video */
-  position: relative;
-left: 35%;
-margin-bottom: 100px;
-}
-
-
 
 footer {  /* i create a footer at the bottom of the page which contains the wiki link for bearded dragons */
   background-color: purple;
   text-align: center;
-  outline: outset; /* creates a smooth black line at the edge of the footer */
+  outline: outset;
 }
