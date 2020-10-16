@@ -5,6 +5,8 @@ html {
   background: url(../Pictures/24357.jpg) no-repeat center fixed;/* background is the picture inside the URL, no repeat means that the picture wont repeat itself if its
   not big enough, center fixed means that the picture will be centered in the middle of the page. */
   background-size: cover; /* makes the whole site covered by my background pic */
+
+  scroll-behavior: smooth;
 }
 
 /************************************************/
@@ -25,10 +27,13 @@ body {  /* creates css for everything inside the body */
 /*  MENU BAR CSS */
 /************************************************/
 
+#section1 {
+
+}
+
 nav {
 width: 100%;
 height: 100px;
-color: white;
 position: fixed;
 top: 0;
 background:black;
@@ -49,7 +54,7 @@ line-height: 50px; /* line height to 50px */
 border-radius: 15px;
 background: orange;
 position: relative;
-left: 30%;
+left: 25%;
 }
 
 /************************************************/
@@ -188,9 +193,14 @@ width: 250px;
 border-radius: 20%;
 }
 
+.fotogalleri:hover { /*  creates a function when u hover any picture */
+  transform: scaleX(-1); /* reverses the pictures because -1 reverses the Axis.*/
+}
+
 /************************************************/
 /* CSS FOR PICTURES ENDS AND HEADERS AND PARAGRAPHS BEGINS */
 /************************************************/
+
 
 h1  {  /* css for all h1*/
   font-family: arial;  /* makes the font arial, assuming every site can have arial i dont have backups yet.*/
@@ -246,11 +256,10 @@ p {  /* css for all paragraphs */
 /************************************************/
 
 .box-container{    /* creates a class for flex box for the 2 headers about lizards */
-  border-radius: 100px;
 	display: flex;  /* displays the headers as flex*/
 	flex-direction: row; /* puts them in a row next to eachother */
 	justify-content:space-evenly; /* makes the headers in the flex box even, it fills the gaps.*/
-  outline: outset; /* this makes the outline of the div dotted. */
+  outline: outset; /* this makes the outline of the div a line  . */
 }
 
 /************************************************/
