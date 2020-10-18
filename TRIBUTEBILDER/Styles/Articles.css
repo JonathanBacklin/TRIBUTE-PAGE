@@ -8,55 +8,58 @@ body {
   padding: 0;
 }
 /************************************************/
-nav {
-width: 100%;
-height: 100px;
-position: fixed;
-top: 0;
-background:black;
-z-index: 100; /* this puts the nav on top of everything with a lower z index */
+nav  {
+position: sticky;
+top: 0px;
+z-index: 100;
 }
 
-/************************************************/
-
-ul {  /* css for Unorderedlist */
+ul {
+  outline:outset 5px orange;
+  background: black;
+  margin:0;
 }
 
-/************************************************/
-
-ul li {  /* Unorderedlist listitem css */
-list-style: none;  /* removes standard bulletpoints that comes with lists */
-display: inline-block; /* puts them next to eachother */
-line-height: 50px; /* line height to 50px */
-border-radius: 15px;
-background: orange;
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  flex-direction: row;
 position: relative;
-left: 30%;
+left: 31%;
+background: orange;
+border-radius: 5px;
+  padding: 0 40px;
 }
 
-/************************************************/
-
-ul li a { /* Unorderedlist listitem anchor css (the actual text) */
-display: block; /* makes the target area for the options bigger. */
-text-decoration: none; /* removes the standard underline on the texts on the list */
-font-size: 60px;
+ul li a {
+text-decoration: none;
+font-size: 44px;
 font-family: sans-serif;
-font-weight: 500;
+font-weight: 1000;
 color: white;
-padding: 10px 25px; /* padding left and right of the different options set to 25 px */
+text-shadow: 2px 2px black;
 }
 
-/************************************************/
-
-ul li a:hover { /* when u hover this, everything from the other ul li a will change to this */
-color: purple;
+ul li a:hover {
+color: black;
+text-shadow: 0px;
+text-decoration: underline;
 }
+
 /************************************************/
 .Articles {
-outline:outset;
+
+  margin: 100px;
+  padding: 50px 25px;
+outline:outset 5px;
+text-align: center;
+text-decoration: underline;
+
 }
 /************************************************/
-#Article1 {
+.Article1 {
+  font-weight: 800;
+    letter-spacing: 2px;
   text-align: center;
   color: white;
   text-shadow: 2px 2px black;
@@ -66,8 +69,10 @@ outline:outset;
   text-decoration: none;
 }
 /************************************************/
-#wikilink {
+.wikilink {
   text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
   color: white;
   text-shadow: 2px 2px black;
   vertical-align: middle;
@@ -103,7 +108,24 @@ p {  /* css for all paragraphs */
   font-family: Arial;
   font-size: 25px;
   font-weight: 800;
-  color: orange;
+  color: white;
   text-shadow: 2px 2px black;
 }
 /************************************************/
+
+footer {  /* i create a footer at the bottom of the page which contains the wiki link for bearded dragons */
+margin-top: 120px;
+  background-color: purple;
+  text-align: center;
+  outline: outset; /* creates a smooth black line at the edge of the footer */
+}
+#Footer {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-weight: 1000;
+  vertical-align: middle;
+  margin-left: auto;
+  font-family: arial;
+  font-size: 36px;
+}
