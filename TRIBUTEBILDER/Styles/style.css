@@ -29,8 +29,14 @@ body {  /* creates css for everything inside the body */
 /*  MENU BAR CSS */
 /************************************************/
 
-#section1 {
+#anchor {
+  position: relative;
+  height: 70px;
+}
 
+#anchor a {
+  position: absolute;
+  top: -70px;
 }
 
 nav  {
